@@ -1,0 +1,7 @@
+<h1>Socars show</h1>
+<hr/>
+<h1><%= @socar.title %></h1>
+<hr/>
+<p><%= @socar.contents %></p>
+<%= link_to 'edit', "/socars/#{@socar.id}/edit" %>
+<%= link_to 'destroy', "/socars/#{@socar.id}", method: 'DELETE' %>

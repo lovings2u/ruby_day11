@@ -1,0 +1,5 @@
+<%= form_tag("/socars/#{@socar.id}", method: 'patch') do %>
+    <%= text_field_tag :title, @socar.title %>
+    <%= text_area_tag :contents, @socar.contents %>
+    <%= submit_tag 'update' %>
+<% end %>

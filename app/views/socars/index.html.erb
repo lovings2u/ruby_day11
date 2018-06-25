@@ -1,0 +1,22 @@
+<h1>Socar Index</h1>
+<table>
+    <thead>
+        <th>title</th>
+        <th>contents</th>
+        <th col="3"></th>
+    </thead>
+    <tbody>
+        <% @socars.each do |socar| %>
+        <tr>
+            <td><%= socar.title %></td>
+            <td><%= socar.contents %></td>
+            <td><%= link_to 'show', "/socars/#{socar.id}" %></td>
+            <td><%= link_to 'edit', "/socars/#{socar.id}/edit" %></td>
+            <td><%= link_to 'destroy', "/socars/#{socar.id}", method: 'DELETE' %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<%= link_to 'new', '/socars/new' %>
+
+

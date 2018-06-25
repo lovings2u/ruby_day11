@@ -1,0 +1,2 @@
+class Socar < ApplicationRecord
+end
